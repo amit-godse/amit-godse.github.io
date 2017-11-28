@@ -232,6 +232,7 @@
         }
     </style>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
 </head>
 <body class="lang-en ">
     <div id="main">
@@ -504,4 +505,28 @@
         </div>
     </div>
 </body>
+<script>
+    // Trianglify
+var options = {
+width: document.body.getBoundingClientRect().width,
+height: document.body.getBoundingClientRect().height,
+x_colors: 'RdYlBu',
+cell_size: 100,
+variance: 1
+};
+function makeBackground(pattern) {
+document.body.style["background-image"] = "url(" + pattern.png() + ")";
+document.body.style["background-repeat"] = "no-repeat";
+document.body.style["background-size"] = "cover";
+}
+makeBackground(Trianglify(options));
+$(window).resize(function () {
+clearTimeout(this.id);
+this.id = setTimeout(doneResizing, 200);
+});
+function doneResizing() {
+var pattern = Trianglify(options);
+makeBackground(pattern);
+}
+</script>
 </html>
