@@ -108,6 +108,8 @@ p label {
     font-weight: 600;
 }
 
+
+
 .resume-title {
     font-size: 350%;
 }
@@ -220,5 +222,70 @@ p label {
         box-shadow: none;
         padding: 0;
         padding: 5px;
+    }
+}
+
+
+@media only screen and (max-device-width: 480px){
+    .section .title {
+        text-align: center;
+    }
+        
+
+    .basic-info {
+        border-top: 0;
+        padding-bottom: 10px;
+    }
+    
+    .section.basic-info .title {
+       text-align: center;
+       float: none;
+    }
+    
+    .basic-info .set {
+        /* float: right; */
+        /* width: 70%; */
+        text-align: center;
+        width: 100%;
+    }
+   
+ 
+    .basic-info  .set {
+        text-align: center;
+        float: none;
+    }
+    
+    .basic-info .section .address {
+            display: block;
+            float: none;
+            text-align: center;
+            width: 100%;
+    }
+
+    .basic-info .address {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    .basic-info .address .value br {
+        display: none;
+    }
+    
+    .basic-info .r{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .basic-info .set .r p {
+        text-align: center;
+    }
+
+
+    .section .set {
+        margin-left: 0px;
+    }
+    
+    #main{
+        padding: 10px 20px;
     }
 }
