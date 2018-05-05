@@ -101,7 +101,7 @@ p label {
 
 /*  _____________________________ */
 .section .title {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 140%;
     margin: 0 auto 15px auto;
     display: block;
