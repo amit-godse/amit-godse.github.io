@@ -17,6 +17,7 @@ h1, h2, h3, h4 {
     padding: 0;
 }
 
+
 h1 {
     font-size: 350%;
 }
@@ -36,6 +37,7 @@ p {
 ul {
     margin: 0;
     list-style-type: square;
+    padding-left: 20px
 }
 
 a {
