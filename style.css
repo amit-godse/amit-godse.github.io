@@ -137,6 +137,16 @@ p label {
     width: 70%;
 }
 
+.skill-section-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-section{
+    width: 50%;
+}
+
+
 .basic-info .address {
     width: 40%;
     float: left;
@@ -289,3 +299,4 @@ p label {
         padding: 10px 20px;
     }
 }
+
